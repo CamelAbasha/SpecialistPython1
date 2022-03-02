@@ -8,3 +8,14 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+
+n = int(input("Число коров:"))
+
+if (n%100)//10==1:
+  print(str(n)+" коров")
+elif n%10==1:
+  print(str(n)+" корова")
+elif 2<=n%10<=4:
+  print(str(n)+" коровы")
+else:
+  print(str(n)+" коров")
