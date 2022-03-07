@@ -6,3 +6,14 @@
 
 # TODO: your code here
 
+text="И темен город. Мороз узором дорог не мети."
+i=0
+s=''
+while i<=len(text)-1:
+    if text[i].isalpha():
+        s+=text[i].lower()
+    i+=1
+if s[::-1]==s:
+    print('YES')
+else:
+    print("NO")
