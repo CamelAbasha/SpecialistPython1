@@ -10,3 +10,12 @@
 # 1234
 
 # TODO: your code here
+
+n=int(input("Введите число:"))
+
+m=1
+s=""
+while m<=n:
+   s+=str(m)
+   print(s)
+   m+=1
