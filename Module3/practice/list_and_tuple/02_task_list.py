@@ -4,3 +4,5 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+for elem in fruits:
+    print(fruits.index(elem),elem)
