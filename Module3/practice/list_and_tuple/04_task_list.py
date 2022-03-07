@@ -2,3 +2,9 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+my_list=[-5,3,2,7,0,-5,1,-9,10,2,4]
+s=0
+for elem in my_list:
+    if elem>0:
+        s+=elem
+print(s)
