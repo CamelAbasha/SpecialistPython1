@@ -5,3 +5,7 @@ text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor
 # Примечание: для генериации текста можете воспользоваться сайтом: https://ru.lipsum.com/
 
 # TODO: your code here
+if text.count(" ")>=5:
+    print("YES")
+else:
+    print("NO")
