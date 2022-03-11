@@ -5,3 +5,10 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+d=[2, -5, 8, 9, -25, 25, 4]
+answer=[]
+for elem in d:
+  if elem>=0 and (elem**0.5)%1==0:
+    answer.append(int(elem**0.5))
+print(answer)
