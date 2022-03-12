@@ -2,7 +2,11 @@
 
 def average(*args):
     # TODO: тело из предыдущей задачи
-    pass
+    s,q = 0,0
+    for el in args:
+        s += el
+        q+=1
+    return s/q
 
 
 def gen_list(size, at=-10, to=10):
