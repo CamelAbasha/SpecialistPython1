@@ -3,7 +3,11 @@
 
 def average(*args):
     # TODO: your code here
-    pass
+    s,q = 0,0
+    for el in args:
+        s += el
+        q+=1
+    return s/q
 
 
 print(average(3, 4, 8))
