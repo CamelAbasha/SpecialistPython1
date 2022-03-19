@@ -10,9 +10,23 @@ path = "dir/limericks.txt"  # вместо dir подставь название
 # Или удалите dir, если limericks.txt в той же папке, что и текущий файл
 
 # Открываем файл на чтение
-f = open(path, "r")
+f = open("limericks.txt", 'r',encoding='utf-8')
+
+space_symbols = (" ", "\n", "\t", None)
+non_space_number=0
+quadres=0
+
 # В переменную line считываем строку за стройкой из файла(f)
 for line in f:
+    print(line.rstrip())
+    if line.rstrip()=="":
+        quadres+=1
+    for symb in line:
+        if not symb in space_symbols:
+            non_space_number+=1
+
+print(non_space_number)
+print(quadres+1)
     ...
 
 # Подсказка: пустые строки выглядят так "\n". Помните? Строка считывается вместе с символом переноса!
