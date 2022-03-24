@@ -5,3 +5,20 @@
 
 # При решении задачи требуется учесть формат входных данных.
 # Если входные данные некорректные, сообщить об этом.
+
+
+line="2 12 -45 7 10"
+digits=line.split()
+positive=[]
+
+for d in digits:
+    try:
+        if int(d)>0:
+            positive.append(int(d))
+    except ValueError:
+        print(d,'- это не число')
+
+if len(positive)>0:
+    print(min(positive))
+else:
+    print('Положительных чисел в списке нет')
