@@ -5,3 +5,27 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+
+import random
+
+my_list = []
+for i in range(8):
+    my_list.append(random.randint(0, 10))
+
+print("Исходный список:", my_list)
+
+
+my_list_unique=[]
+for el in my_list:
+    if not el in my_list_unique:
+        my_list_unique.append(el)
+
+print("Неповторяющиеся(уникальные) элементы исходного списка:",my_list_unique)
+
+
+my_list_no_repeat=[]
+for el in my_list:
+    if my_list.count(el)==1:
+        my_list_no_repeat.append(el)
+
+print("Элементы исходного списка, которые не имеют повторений(встречаются только один раз):",my_list_no_repeat)
